@@ -1,21 +1,27 @@
 {
-  "name": "svelte",
-  "version": "1.4.3",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mattbegent/svelte.git"
-  },
-  "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-qunit": "^2.0.0",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-jsdoc": "*",
-    "grunt-saucelabs": "*"
+  "name": "colla",
+  "version": "1.0.0",
+  "description": "A lightweight JavaScript library",
+  "main": "colla.js",
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
-    "test": "grunt test"
+    "docs": "./node_modules/.bin/jsdoc colla.js -t ./src/minami",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d3ward/colla-js.git"
+  },
+  "author": "Eduard Ursu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d3ward/colla-js/issues"
+  },
+  "homepage": "https://github.com/d3ward/colla-js#readme",
+  "devDependencies": {
+    "jsdoc": "^3.6.6",
+    "minami": "^1.2.3"
   }
 }
