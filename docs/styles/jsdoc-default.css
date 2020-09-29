@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box
 }
+html{
+  scroll-behavior: smooth;
+}
 
 html, body {
   height: 100%;
@@ -70,7 +73,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  margin: 1em 0 .2em;
+  padding-top: 2rem;
   color: #4d4e53;
   /* border-bottom: 1px solid #eee; */
   padding-bottom: 8px;
