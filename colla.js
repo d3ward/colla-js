@@ -688,7 +688,6 @@ window.$.fn = collaProto;
 }(window, document));
 
 // Polyfills
-
 // Matches - prefixed in IE, IOS7 Safari and older Android browser versions
 if(!Element.prototype.matches) {
     Element.prototype.matches =  Element.prototype.matchesSelector || Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;

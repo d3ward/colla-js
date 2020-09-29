@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "A lightweight JavaScript library",
   "main": "colla.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "docs": "./node_modules/.bin/jsdoc colla.js -t ./src/minami",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs": "./node_modules/.bin/jsdoc colla.js -t ./src/minami --destination ./src",
+    "min": "./node_modules/.bin/minify colla.js > colla.min.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +19,11 @@
   "homepage": "https://github.com/d3ward/colla-js#readme",
   "devDependencies": {
     "jsdoc": "^3.6.6",
-    "minami": "^1.2.3"
-  }
+    "minami": "^1.2.3",
+    "minify": "^6.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
