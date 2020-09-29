@@ -159,20 +159,27 @@ var collaProto = {
     },
 
     /**
-    * Toggles the display property of the selector
+    * Toggles the display property of the selector or a class from selecetor
     * @memberOf Colla
-    * @returns Boolean
+    * @param {string} className Name of class to toggle
+    * @returns Colla
     * @example
-    * $('.visible').visible();
+    * $('.class-box').toggle();
+    *  $('.class').toggle('toggle-class');
     */
     toggle: function() {
+        if(className){
+            return this.each(function(el) {
+                if(el.style.display === '' || el.style.display === 'block') {
+                    el.style.display = 'none';
+                }
+                else {
+                    el.style.display = 'block';
+                }
+            });
+        }
         return this.each(function(el) {
-            if(el.style.display === '' || el.style.display === 'block') {
-                el.style.display = 'none';
-            }
-            else {
-                el.style.display = 'block';
-            }
+            el.classList.toggle(className);
         });
     },
 
@@ -204,20 +211,7 @@ var collaProto = {
         });
     },
 
-    /**
-    * Toggles a class from the selector
-    * @memberOf Colla
-    * @param {string} className Name of class to toggle
-    * @returns Colla
-    * @example
-    * $('.class toggle-class').toggleClass('toggle-class');
-    */
-    toggleClass: function(className) {
-        return this.each(function(el) {
-            el.classList.toggle(className);
-        });
-    },
-
+   
     /**
     * Checks whether the selector has a specific class
     * @memberOf Colla

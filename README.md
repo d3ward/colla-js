@@ -1,16 +1,13 @@
 colla
 ======================================
 
-## This repo is for Colla: a modern JavaScript library. Go here if you're looking for [Colla: Cybernetically enhanced web apps](https://github.com/collajs/colla)
-
 What is colla?
 ---------------------
 
-It is a lightweight modern JavaScript library (4.1KB minified) intended for use on projects where legacy browser support is not necessary.
+Fork of Svelte JS is a lightweight modern JavaScript library intended for use on projects where legacy browser support is not necessary.
 
 It uses modern JavaScript (querySelectorAll, classList, matchesSelector) to help make it as lightweight as possible and therefore only works on the latest version of modern browsers E.g. Chrome, Firefox, Opera, IE10+.
 
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/colla.svg)](https://saucelabs.com/u/colla)
 
 Getting Started
 ---------------------
@@ -18,10 +15,6 @@ Getting Started
 Simply download the minified version of colla and reference it in your page.
 
 	<script src="colla.min.js"></script>
-
-You can also install colla using bower:
-
-	bower install colla	
 
 How To
 ---------------------
@@ -38,10 +31,10 @@ API
 * css(property, value)
 * hide()
 * show()
-* toggle()
+* fade()
+* toggle(className)
 * addClass(className)
 * removeClass(className)
-* toggleClass(className)
 * hasClass(className)
 * on(name, callback)
 * one(name, callback)
@@ -84,28 +77,10 @@ You can easily add a custom function to colla by adding to $.fn.
 	
 	$('.says-cool').cool();	
 
-Ajax	
----------------------
 
-The colla ajax function was removed in version 1.4.0. Instead it is recommended that you use the [fetch api](https://fetch.spec.whatwg.org/). There is a version of colla bundled with a [fetch](https://github.com/github/fetch) and promises [polyfill](https://github.com/jakearchibald/es6-promise) colla.fetch.min.js.
-
-	fetch('/test.html')
-	.then(function(response) {
-		return response.text()
-	}).then(function(body) {
-		document.body.innerHTML = body
-	})
-
-IE9	
----------------------
-
-If you need to support IE9, you will need to use a pollyfill for ClassList like [this one](https://github.com/remy/polyfills/blob/master/classList.js) and put it somewhere before colla is included on the page.
-
-	<!--[if IE 9]>
-		<script src="js/classlist.js"></script>
-	<![endif]-->
 
 Get Involved
 ---------------------
 
-Feel free to help make colla better :-).
+Feel free to help make Colla better :-).
+
