@@ -4,7 +4,7 @@
   "description": "A lightweight JavaScript library",
   "main": "colla.js",
   "scripts": {
-    "docs": "./node_modules/.bin/jsdoc colla.js -t ./src/minami --destination ./src",
+    "docs": "./node_modules/.bin/jsdoc colla.js -t ./minami --destination ./docs",
     "min": "./node_modules/.bin/minify colla.js > colla.min.js"
   },
   "repository": {
